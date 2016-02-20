@@ -24,6 +24,17 @@ h6  {
   /*overflow:hidden;*/
   padding-top:10px; /*110 remaining minus 10 padding equals 100 */
   float:left;
+  padding-left:20px;
+}
+
+.schoolInfo p {
+  margin-bottom: 5px;
+}
+
+#addToFav {
+  background-color: red;
+  color: white;
+  padding: 2px 10px;
 }
 
 .schoolName {
