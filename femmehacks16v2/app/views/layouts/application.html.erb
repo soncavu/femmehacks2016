@@ -2,19 +2,17 @@
 <html>
 <head>
   <title>Femmehacks2016</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag  'style',  media: 'all', 'data-turbolinks-track' => true %>
+  
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= link_to 'Home', root_path %> | <%= link_to "All Scholarships", '/scholarships' %>
- | <%= link_to 'Categories', '/categories' %>
-
- <%= yield %>
 	<div id="header">
 	<ul>
-  <li><a class="active" href="">TitleLogo</a></li>
-  <li><a href="">Scholarships</a></li>
+  <li><%= link_to 'Home', root_path %> </li>
+  <li><%= link_to "Scholarships", '/scholarships' %></li>
+  <li><%= link_to 'Categories', '/categories' %></li>
   <li><a href="">Schools</a></li>
   <li><a href="">Forum</a></li>
    </ul>
