@@ -13,7 +13,7 @@ $(document).ready(function() {
         'height': maxheight + 'px'
       });
 
-      var link = $('<div style="position:relative;" class="container-fluid showhide"><a href="#" class="showhide">' + showText + '</a></div>');
+      var link = $('<div style="position:relative;" class="showhide"><a href="#" class="showhide">' + showText + '</a></div>');
       var linkDiv = $('<div class="test"></div>');
       linkDiv.append(link);
       $(this).after(linkDiv);
