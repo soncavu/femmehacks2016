@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Femmehacks16v2</title>
+  <title>Femmehacks2016</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -10,14 +10,19 @@
 <%= link_to 'Home', root_path %> | <%= link_to "All Scholarships", '/scholarships' %>
  | <%= link_to 'Categories', '/categories' %>
 
-<% form_tag '/scholarships', :method => 'get' do %>
-  <p>
-    <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search", :name => nil %>
-  </p>
-<% end %>
-
  <%= yield %>
+	<div id="header">
+	<ul>
+  <li><a class="active" href="">TitleLogo</a></li>
+  <li><a href="">Scholarships</a></li>
+  <li><a href="">Schools</a></li>
+  <li><a href="">Forum</a></li>
+   </ul>
+	
+	</div>
+	
+<%= yield %>
+
 
 </body>
 </html>
