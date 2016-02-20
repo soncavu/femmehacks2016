@@ -1,0 +1,12 @@
+h6  {
+  font-weight: bold;
+}
+
+.showhide {
+  color: red;
+}
+
+.showhide:hover {
+  color: green;
+  text-decoration: underline;
+}
