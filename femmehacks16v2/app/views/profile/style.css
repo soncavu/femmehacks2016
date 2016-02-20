@@ -3,6 +3,40 @@ h6  {
 
 }
 
+.profileHeader{
+    background: center no-repeat;
+    background-size: 100% auto ;
+    height: 200px; /* 200 tall  */
+    padding-top: 75px; /* 200 remaining minus 75 padding-top equals 125 */
+    padding-bottom: 15px; /* 125 remaining minus 15 padding-bottom equals 110 */
+}
+
+.schoolLogo {
+    margin-left: 30px;
+    float:left;
+}
+
+.schoolLogo img {
+  max-height: 110px;
+}
+
+.schoolInfo {
+  /*overflow:hidden;*/
+  padding-top:10px; /*110 remaining minus 10 padding equals 100 */
+  float:left;
+}
+
+.schoolName {
+  font-size: 30px;
+  color: white;
+}
+
+.schoolLocation {
+  font-size: 10px;
+  color: white;
+
+}
+
 .box-frame {
   margin: 36px 16px;
   border: 1px solid darkgray;
