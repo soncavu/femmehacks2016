@@ -1,0 +1,61 @@
+
+<% unless @user.id == current_user.id %>
+  <% unless current_user.friends.exists?(@user.id) %>
+  <p>
+    <%= link_to 'Send Connection Request', friendships_path(:friend_id => @user), :method => :post %>
+  </p>
+  <%else%>
+    <p>
+      <strong>Email: </strong>
+      <%= @user.email %>
+    </p>
+    <!--You are connected to <%= @user.name %>-->
+  <% end %>
+<% end %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Statement:</strong>
+  <%= @user.statement %>
+</p>
+<p>
+  <strong>Photos:</strong>
+  <% if @user.image1.file? %>
+  <br>
+    <%= image_tag @user.image1.url(:medium) %>
+  <% end %>
+  <br>
+
+  <% if @user.image2.file? %>
+    <br>
+    <%= image_tag @user.image2.url(:medium) %>
+  <% end %>
+
+  <% if @user.image3.file? %>
+   <br>
+    <%= image_tag @user.image3.url(:medium) %>
+  <% end %>
+
+  <% if @user.image4.file? %>
+   <br>
+    <%= image_tag @user.image4.url(:medium) %>
+  <% end %>
+
+  <% if @user.image5.file? %>
+   <br>
+    <%= image_tag @user.image5.url(:medium) %>
+  <% end %>
+
+  <% if not(@user.image1.file?) && not(@user.image2.file?) && not(@user.image3.file?) && not(@user.image4.file?) && not(@user.image5.file?) && @user.id == current_user.id %>
+    Upload some works!
+  <% end %>
+
+</p>
+
+<% if @user.id == current_user.id %>
+  <%= link_to 'Edit Profile', edit_user_path(@user) %>
+<% end %>

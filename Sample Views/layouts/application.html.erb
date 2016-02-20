@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>InteCreate</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="Main_Header">
+    <h1>InteCreate</h1>
+      <%if logged_in?%>
+        <%= link_to 'Home', root_path %> | <%= link_to "Profile", user_path(current_user) %> | <%= link_to 'See Friends', '/friendships' %> | <%= link_to "Browse", '/browse' %> | <%= link_to "Logout", '/logout' %>
+      <% else %>
+        <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+      <%end%>
+    </div>
+    <br>
+<%= yield %>
+
+</body>
+</html>
