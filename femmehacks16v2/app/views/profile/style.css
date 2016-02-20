@@ -1,0 +1,45 @@
+h6  {
+  font-weight: bold;
+
+}
+
+.box-frame {
+  margin: 36px 16px;
+  border: 1px solid darkgray;
+  padding: 12px;
+}
+
+.sectionHeading {
+  font-size: 18px;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 18px;
+}
+
+.subHeading {
+  font-weight: bold;
+}
+
+.showhide, a{
+  color: red;
+}
+
+.showhide:hover, a:hover{
+  color: green;
+  text-decoration: underline;
+}
+
+.programType {
+  font-weight: bold;
+}
+
+.programDetail {
+
+}
+
+.commentStudentName {
+  font-weight: bold;
+}
+
+.commentStudentText {
+
+}
