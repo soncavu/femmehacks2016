@@ -5,33 +5,30 @@
 		<meta name="viewport" content="width=device-width,initial-scale=0.8,minimum-scale=0.8,maximum-scale=0.8,minimal-ui">
 		<title id="title">Scholarship</title>
 		<link id="stylesheet" rel="stylesheet" href="style.css">
-		<script src="jquery.min.js"></script>	
+		<script src="jquery.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">	
 	</head>
 	
 	
 	<body>
 		
-			<div id ="header"> 
-			</div>
 			
-			<div id="body-box">	
-				<div class = "filter-box">
-					<form class="search-form" action="">
+			
+			<div id="body-box" >	
+				
+				<div class = "row containers">
+				<div class = "col-md-3">
+					<form class="filter-box" action="">
 						<input class = "search-keywords" type="text" value="keywords"></input>
 						<h4>category</h4>
 							<select name="category">
 								<option value="ctg1">ctg1</option>
 							</select>
 								<br>
-					<input class="search-action" type="submit" value="Search">
-</form>
-					
-				
-					
-					
+						<input class="search-action" type="submit" value="Search"></form>	
 				</div>
 			
-				<div id = "scholarship-list">
+				<div id = "scholarship-list col-md-9">
 					
 					<p id="number-of-scholarships"> 1111 Scholarships </p>
 					
@@ -54,10 +51,19 @@
 							  </tr>
 							 
 							</table>
+					<table class = "page-index">
+					<tr>
+						<td><a>1</a></td>
+						<td><a>2</a></td>
+						
+					</tr>
+					</table>
+				
 					
 				</div>
 				
-				<div class = "page_index"></div>
+				</div>
+				
 				
 			</div>
 			
