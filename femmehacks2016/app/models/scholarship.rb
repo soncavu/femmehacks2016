@@ -4,4 +4,5 @@ class Scholarship < ActiveRecord::Base
 
   has_many :categoriesScholarships, dependent: :destroy
   has_many :categories, through: :categoriesScholarship
+  has_many :comments
 end
