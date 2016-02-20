@@ -2,11 +2,61 @@
 <html>
 <head>
   <title>Femmehacks2016</title>
+  <style>
+	  
+#header{
+	height: 50px;
+	width: 100%;
+	background: #1bcdc2;
+	color:white;
+	vertical-align: bottom;
+	margin-top:0;
+	margin-bottom: 0;
+	
+	
+}
+#header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+#header li {
+    float: left;
+    list-style: none;
+}
+
+#header li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#header li a:hover {
+	color:black;
+    background-color: ;
+}
+
+#header .active{
+	color:black;
+
+}
+	  </style>
+	  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%= link_to 'Home', root_path %> | <%= link_to "All Scholarships", '/scholarships' %>
+ | <%= link_to 'Categories', '/categories' %>
+
+ <%= yield %>
+ 
 	<div id="header">
 	<ul>
   <li><a class="active" href="">TitleLogo</a></li>
@@ -17,8 +67,8 @@
 	
 	</div>
 	
-<%= link_to 'Home', root_path %> | <%= link_to "Scholarships", '/scholarships' %>
 <%= yield %>
+
 
 </body>
 </html>
