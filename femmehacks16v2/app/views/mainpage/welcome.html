@@ -1,0 +1,108 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style>
+h1 {text-align:center;}
+p {text-align:center;}
+
+div.background {
+    background: url('background_college.jpg') no-repeat center center fixed;
+
+    background-size: cover; /* for IE9+, Safari 4.1+, Chrome 3.0+, Firefox 3.6+ */
+        -webkit-background-size: cover; /* for Safari 3.0 - 4.0 , Chrome 1.0 - 3.0 */
+        -moz-background-size: cover; /* optional for Firefox 3.6 */ 
+        -o-background-size: cover; /* for Opera 9.5 */
+        margin: 0; /* to remove the default white margin of body */
+        padding: 0; /* to remove the default white margin of body */
+        overflow: hidden;
+}
+
+div.transbox {
+    margin: 350px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+div.transbox p {
+    margin: 5%;
+    font-size: 25px;
+    font-family: 'Helvetica', serif;
+    color: gray;
+}
+
+<title>Search Box</title>
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+
+<!-- CSS styles for standard search box -->
+<style type="text/css">
+    #tfheader{
+        background-color:#808080;
+
+    }
+    #tfnewsearch{
+        float:center;
+        padding:60px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300;
+    }
+    .tftextinput{
+        margin: 0;
+        padding: 5px 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:14px;
+        border:1px solid #000000; border-right:0px;
+        border-top-left-radius: 5px 5px;
+        border-bottom-left-radius: 5px 5px;
+    }
+    .tfbutton {
+        margin: 0;
+        padding: 5px 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:14px;
+        outline: none;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+        border: solid 1px #8C001A; border-right:0px;
+        background: #8C001A;
+        background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+        border-top-right-radius: 5px 5px;
+        border-bottom-right-radius: 5px 5px;
+    }
+    .tfbutton:hover {
+        text-decoration: none;
+        background: #8C001A;
+    }
+    /* Fixes submit button height problem in Firefox */
+    .tfbutton::-moz-focus-inner {
+      border: 0;
+    }
+    .tfclear{
+        clear:both;
+    }
+</style>
+</head>
+<body>
+
+<div class="background">
+  <div class="transbox">
+    <p>Find and pay for your dream school</p>
+     <!-- SEARCH BOX -->
+    <div id="tfheader">
+        <form id="tfnewsearch" method="get" action="http://www.google.com">
+                <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+        </form>
+    <div class="tfclear"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+   
+
+</html>
