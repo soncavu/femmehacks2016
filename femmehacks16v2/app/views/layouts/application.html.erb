@@ -7,8 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= link_to 'Home', root_path %> | <%= link_to "Scholarships", '/scholarships' %>
-<%= yield %>
+<%= link_to 'Home', root_path %> | <%= link_to "All Scholarships", '/scholarships' %>
+ | <%= link_to 'Categories', '/categories' %>
+
+<% form_tag '/scholarships', :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+
+ <%= yield %>
 
 </body>
 </html>

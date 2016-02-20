@@ -3,10 +3,15 @@ class ScholarshipsController < ApplicationController
 
   # GET /scholarships
   # GET /scholarships.json
-  def index
-    @scholarships = Scholarship.all
-  end
 
+  def index
+    if params[:search]
+      @scholarships = Scholarship.search(params[:search]).order(:created_at)
+    else
+      @scholarships = Scholarship.order(:created_at)
+    end
+  end
+    
   # GET /scholarships/1
   # GET /scholarships/1.json
   def show

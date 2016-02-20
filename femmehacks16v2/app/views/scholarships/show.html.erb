@@ -36,4 +36,5 @@
 </p>
 
 <%= link_to 'Edit', edit_scholarship_path(@scholarship) %> |
+<td><%= link_to 'Destroy', @scholarship, method: :delete, data: { confirm: 'Are you sure?' } %></td> | 
 <%= link_to 'Back', scholarships_path %>
