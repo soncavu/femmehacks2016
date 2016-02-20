@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<!--IMAGE DISPLAY -->
+
+<% if @user.image1.file? %>
+  <%= image_tag @user.image1.url(:medium) %>
+<% end %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @scholarship.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @scholarship.description %>
+</p>
+
+<p>
+  <strong>Organization:</strong>
+  <%= @scholarship.organization %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @scholarship.amount %>
+</p>
+
+<p>
+  <strong>Deadline:</strong>
+  <%= @scholarship.deadline %>
+</p>
+
+<p>
+  <strong>Eligibility:</strong>
+  <%= @scholarship.eligibility %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @scholarship.link %>
+</p>
+
+<%= link_to 'Edit', edit_scholarship_path(@scholarship) %> |
+<%= link_to 'Back', scholarships_path %>
