@@ -1,7 +1,7 @@
 html{
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-	box-sizing: border-box; 
+	box-sizing: border-box;
 }
 
 #header{
@@ -12,15 +12,15 @@ html{
 	vertical-align: bottom;
 	margin-top:0;
 	margin-bottom: 0;
-	
-	
+
+
 }
 #header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    
+
 }
 
 #header li {
@@ -53,12 +53,12 @@ body{
 }
 
 p{
-	
+
 }
 
 h1{
 	font-size: 18px;
-	
+
 }
 h2{
 	font-size: 12px;
@@ -78,21 +78,21 @@ h4{
 	margin-right: auto;
 	background: white;
 	position: relative;
-	
-	
+
+
 }
 
 
 
 .filter-box{
-	
+
 	height:200px;
 	width: 180px;
 	background: #eeeeee;
 	border: #d9d9d9;
 	border-style: solid;
 	border-width: 1px;
-	
+
 	margin:20px;
 	text-align: center;
 }
@@ -100,13 +100,13 @@ h4{
 .filter-box input{
 	margin-top:10px;
 	margin-left: 10px;
-	
+
 }
 
 .search-box{
-	
+
 	border-style: none;
-	
+
 }
 
 .search-action{
@@ -119,13 +119,13 @@ h4{
 }
 
 #scholarship-list{
-	
 
-	
+
+
 }
 
 #scholarship-table, #scholarship-table tr{
-	
+
 
 	border: black;
 	border-top-style: solid;
@@ -134,7 +134,7 @@ h4{
 	border-width: 1px;
 	border-collapse: collapse;
 	}
-	
+
 
 #scholarship-table th{
 	font-weight: 600;
@@ -143,9 +143,9 @@ h4{
 	padding:10px;
 }
 
-	
+
 #scholarship-table td{
-	
+
 	text-align:center;
 	border: 20px;
 	width:150px;
@@ -154,11 +154,11 @@ h4{
 }
 
 .page-index{
-	
+
 	text-align:center;
 	margin-top:30px;
-	
-	
+
+
 }
 
 .page-index td{
@@ -168,7 +168,7 @@ h4{
 	background: #ebebeb;
 	border: white;
 	border-style: solid;
-	
+
 	}
 
 
@@ -180,7 +180,7 @@ div.background {
 
     background-size: cover; /* for IE9+, Safari 4.1+, Chrome 3.0+, Firefox 3.6+ */
         -webkit-background-size: cover; /* for Safari 3.0 - 4.0 , Chrome 1.0 - 3.0 */
-        -moz-background-size: cover; /* optional for Firefox 3.6 */ 
+        -moz-background-size: cover; /* optional for Firefox 3.6 */
         -o-background-size: cover; /* for Opera 9.5 */
         margin: 0; /* to remove the default white margin of body */
         padding: 0; /* to remove the default white margin of body */
@@ -251,3 +251,110 @@ div.transbox p {
     .tfclear{
         clear:both;
     }
+
+/* Profile Page */
+.profileHeader{
+    background: center no-repeat;
+    background-size: 100% auto ;
+    height: 200px; /* 200 tall  */
+    padding-top: 75px; /* 200 remaining minus 75 padding-top equals 125 */
+    padding-bottom: 15px; /* 125 remaining minus 15 padding-bottom equals 110 */
+}
+
+.schoolLogo {
+    margin-left: 30px;
+    float:left;
+}
+
+.schoolLogo img {
+  max-height: 110px;
+}
+
+.schoolInfo {
+  padding-top:10px; /*110 remaining minus 10 padding equals 100 */
+  float:left;
+  padding-left:20px;
+}
+
+.schoolInfo p {
+  margin-bottom: 5px;
+}
+
+#addToFav {
+  background-color: red;
+  color: white;
+  padding: 2px 10px;
+}
+
+#addToFav a {
+  color: white;
+  text-decoration: none;
+}
+
+#addToFav:hover {
+  background-color: white;
+  color: red;
+  text-decoration: none;
+}
+
+a:visited, a:active {
+  text-decoration: none;
+}
+
+.scholarshipSection {
+  margin-left: 16px; /* should match below */
+  margin-right: 16px; /* should match second margin number in .box-frame */
+}
+
+.box-frame {
+  margin: 36px 16px; /* second number should match both margin settings in scholarshipSection */
+  border: 1px solid darkgray;
+  padding: 12px;
+}
+
+.schoolName {
+  font-size: 30px;
+  color: white;
+}
+
+.schoolLocation {
+  font-size: 10px;
+  color: white;
+
+}
+
+.sectionHeading {
+  font-size: 18px;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 18px;
+}
+
+.subHeading {
+  font-weight: bold;
+}
+
+.showhide, a{
+  color: red;
+}
+
+.showhide:hover, a:hover{
+  color: white;
+  background-color: red;
+  text-decoration: none;
+}
+
+.programType {
+  font-weight: bold;
+}
+
+.programDetail {
+
+}
+
+.commentStudentName {
+  font-weight: bold;
+}
+
+.commentStudentText {
+
+}
