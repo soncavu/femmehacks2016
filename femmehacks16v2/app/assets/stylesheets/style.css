@@ -45,6 +45,89 @@ html{
 	color:black;
 
 }
+
+/* Index page */
+h1 {text-align:center;}
+p {text-align:center;}
+
+div.background {
+    background: url('background_college.jpg') no-repeat center center fixed;
+
+    background-size: cover; /* for IE9+, Safari 4.1+, Chrome 3.0+, Firefox 3.6+ */
+        -webkit-background-size: cover; /* for Safari 3.0 - 4.0 , Chrome 1.0 - 3.0 */
+        -moz-background-size: cover; /* optional for Firefox 3.6 */
+        -o-background-size: cover; /* for Opera 9.5 */
+        margin: 0; /* to remove the default white margin of body */
+        padding: 0; /* to remove the default white margin of body */
+        overflow: hidden;
+}
+
+div.transbox {
+    margin: 350px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+div.transbox p {
+    margin: 5%;
+    font-size: 25px;
+    font-family: 'Helvetica', serif;
+    color: gray;
+}
+
+/*WELCOME PAGE */
+    #tfheader{
+        background-color:#808080;
+
+    }
+    #tfnewsearch{
+        float:center;
+        padding:60px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300;
+    }
+    .tftextinput{
+        margin: 0;
+        padding: 5px 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:14px;
+        border:1px solid #000000; border-right:0px;
+        border-top-left-radius: 5px 5px;
+        border-bottom-left-radius: 5px 5px;
+    }
+    .tfbutton {
+        margin: 0;
+        padding: 5px 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:14px;
+        outline: none;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+        border: solid 1px #8C001A; border-right:0px;
+        background: #8C001A;
+        background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+        border-top-right-radius: 5px 5px;
+        border-bottom-right-radius: 5px 5px;
+    }
+    .tfbutton:hover {
+        text-decoration: none;
+        background: #8C001A;
+    }
+    /* Fixes submit button height problem in Firefox */
+    .tfbutton::-moz-focus-inner {
+      border: 0;
+    }
+    .tfclear{
+        clear:both;
+    }
+
+/* List Page */
 body{
 	background-color: #efefef;
 	color: black;
@@ -52,22 +135,35 @@ body{
 	font-size: 14px;
 }
 
-p{
 
+a{
+	color: #8c1515;
 }
 
-h1{
+a:hover{
+	color: #f36b6b;
+	text-decoration: none;
+}
+
+#list-page p{
+	text-align: left;
+}
+
+#list-page h1{
+
 	font-size: 18px;
 
 }
-h2{
+#list-page h2{
+
 	font-size: 12px;
 
 
 }
-h4{
+#list-page h4{
 	font-weight: 200;
 	color: #606060;
+	font-size: 14px;
 	line-height: 0px;
 }
 #body-box{
@@ -106,16 +202,38 @@ h4{
 .search-box{
 
 	border-style: none;
+<<<<<<< HEAD
 
+=======
+
+
+}
+
+.btn-group{
+	margin-top:10px;
+
+}
+.search-keywords{
+	color:#9e9e9e
+}
+select {
+
+>>>>>>> 7e3beb09799c65e49051d7ecf2c8ed8282554fba
 }
 
 .search-action{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	background: #1bcdc2;
+	background: #8c1515;
 	border-style: none;
 	color:white;
+}
+
+#number-of-scholarships {
+	font-weight: 500;
+	margin-top: 10px;
+	color:#8c1515;
 }
 
 #scholarship-list{
@@ -171,6 +289,7 @@ h4{
 
 	}
 
+<<<<<<< HEAD
 
 h1 {text-align:center;}
 p {text-align:center;}
@@ -358,3 +477,5 @@ a:visited, a:active {
 .commentStudentText {
 
 }
+=======
+>>>>>>> 7e3beb09799c65e49051d7ecf2c8ed8282554fba
