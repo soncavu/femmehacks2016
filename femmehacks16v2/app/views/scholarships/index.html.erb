@@ -29,3 +29,82 @@
 <br>
 
 <%= link_to 'New Scholarship', new_scholarship_path %>
+
+  
+      
+      <div id="body-box" >  
+        
+        <div class = "row containers">
+        <div class = "col-md-3">
+          <form class="filter-box" action="">
+            <input class = "search-keywords" type="text" value="Search keywords"></input>
+          <br>
+          
+          <div class="btn-group search-by-category">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+          <li><a href="#">Category1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          
+            </ul>
+          </div>    
+          
+          <div class="btn-group search-by-amount">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Amount<span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+          <li><a href="#">less than 1000</a></li>
+          <li><a href="#">$1000~$2000</a></li>
+          <li><a href="#">3</a></li>
+          
+            </ul>
+          </div>    
+        </div>
+      
+        <div id = "scholarship-list col-md-9">
+          
+          <p id="number-of-scholarships"> 1111 Scholarships </p>
+          
+          <table id="scholarship-table">
+                <tr class="table-header">
+                  <th>Scholarship Name</th>
+                  <th>Category</th>
+                  <th>Average Amount</th>   
+                  <th>Deadline</th>
+                  <th>Website</th>
+                </tr>
+                <% @scholarships.each do |scholarship| %>
+                <tr class="scholarship-table-items">
+                  <td><a href=""><%= link_to scholarship.name, scholarship %></a>
+                  <br>
+                  <img src="" width="100" height="100"/></td>
+                  <td>Category</td>
+                  <td><%= scholarship.amount %></td>    
+                  <td><%= scholarship.deadline %></td>
+                  <td><a href=""><%= link_to 'Show', scholarship %></a></td>
+                  <% end %>
+                </tr>
+               
+              </table>
+          <table class = "page-index">
+          <tr>
+            <td><a>1</a></td>
+            <td><a>2</a></td>
+            
+          </tr>
+          </table>
+        
+          
+        </div>
+        
+        </div>
+        
+        
+      </div>
+      
+      <div id="footer">
+      </div>
