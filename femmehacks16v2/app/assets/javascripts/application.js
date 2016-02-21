@@ -1,16 +1,33 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
-//
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
-// or any plugin's vendor/assets/javascripts directory can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// compiled file.
-//
-// Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
-// about supported directives.
-//
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+
+var showText = "See More>>>";
+var hideText = "Hide<<<";
+
+$(document).ready(function() {
+
+
+  $('.expandable').each(function() {
+    var text = $(this);
+    if (text.height() > maxheight) {
+      text.css({
+        'overflow': 'hidden',
+        'height': maxheight + 'px'
+      });
+
+      var link = $('<div style="position:relative;" class="showhide"><a href="#" class="showhide">' + showText + '</a></div>');
+      var linkDiv = $('<div class="test"></div>');
+      linkDiv.append(link);
+      $(this).after(linkDiv);
+
+      link.click(function(event) {
+        event.preventDefault();
+        if (text.height() > maxheight) {
+          $(this).html(showText);
+          text.css('height', maxheight + 'px');
+        } else {
+          $(this).html(hideText);
+          text.css('height', 'auto');
+        }
+      });
+    }
+  });
+});

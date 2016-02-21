@@ -3,6 +3,7 @@
 <head>
   <title>Femmehacks2016</title>
   <%= stylesheet_link_tag  'style',  media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag "welcome" if controller_name == "welcome" %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>

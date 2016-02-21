@@ -1,40 +1,72 @@
+<div class="mainsection">
+      <div class="profileHeader" style="background-image: url(penn.jpg);">
+        <%= image_tag("penn_logo.png", class: "schoolLogo")%>
+        <div class="schoolLogo">
+          <img src="penn_logo.png" alt="" />
+        </div>
+        <div class="schoolInfo">
+          <p class="schoolName"><%= @scholarship.name %></p>
+
+        </div>
+      </div>
+      <div class="scholarshipSection row">
+        <!-- Left profile box - Overview -->
+        <div class="col-md-4 col-sm-12 cl-xs-12">
+          <div class="box-frame">
+            <p class="sectionHeading">Overview</p>
+            <div class="subHeading">Amount</div>
+            <p><%= @scholarship.amount %></p>
+            <div class="subHeading">Deadline</div>
+            <p><%= @scholarship.deadline %></p>
+            <div class="subHeading">Website</div>
+            <p><%= @scholarship.link %></p>
+
+            <div class="subHeading">Description</div>
+            <div class="expandable">
+              <p><%= @scholarship.description %></p>
+            </div> <!-- Close Expandable -->
+          </div> <!-- Close boxframe -->
+        </div> <!-- Close main column -->
+          <!-- Center profile box - Fin Info -->
+        <div class="col-md-4 col-sm-6 cl-xs-12">
+          <div class="box-frame">
+            <p class="sectionHeading">Eligibility</p>
+            
+            <p><%= @scholarship.eligibility %></p>
+          </div> <!-- Close boxframe -->
+        </div> <!-- Close main column -->
+          <!-- Right profile box - Popular Programs & Student Comments -->
+        <div class="col-md-4 col-sm-6 cl-xs-12">
+          <div class="box-frame">
+            <p class="sectionHeading">Similar Programs</p>
+            <p>
+              
+            </p>
+            
+            <p>
+              See all Programs at #####
+            </p>
+          </div> <!-- Close boxframe -->
+          <div class="box-frame">
+            <p class="sectionHeading">Student Comments</p>
+            <p class="text-right">latest</p>
+            <p>
+              <span class="commentStudentName">Jackie Mai:</span>
+              <span class="commentStudentText">"Beautiful Campus, Love it!"</span>
+            </p>
+            <p>
+              <span class="commentStudentName">Jackie Mai:</span>
+              <span class="commentStudentText">"Beautiful Campus, Love it!"</span>
+            </p>
+            <p>
+              <span class="commentStudentName">Jackie Mai:</span>
+              <span class="commentStudentText">"Beautiful Campus, Love it!"</span>
+            </p>
+          </div> <!-- Close boxframe -->
+
+        </div> <!-- Close main column -->
+      </div> <!-- Close row -->
+    </div> <!-- Close body class -->
+
+
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @scholarship.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @scholarship.description %>
-</p>
-
-<p>
-  <strong>Organization:</strong>
-  <%= @scholarship.organization %>
-</p>
-
-<p>
-  <strong>Amount:</strong>
-  <%= @scholarship.amount %>
-</p>
-
-<p>
-  <strong>Deadline:</strong>
-  <%= @scholarship.deadline %>
-</p>
-
-<p>
-  <strong>Eligibility:</strong>
-  <%= @scholarship.eligibility %>
-</p>
-
-<p>
-  <strong>Link:</strong>
-  <%= @scholarship.link %>
-</p>
-
-<%= link_to 'Edit', edit_scholarship_path(@scholarship) %> |
-<td><%= link_to 'Destroy', @scholarship, method: :delete, data: { confirm: 'Are you sure?' } %></td> | 
-<%= link_to 'Back', scholarships_path %>
